@@ -25,8 +25,8 @@ var server = net.createServer((socket) => {
       // Don't want to send it to sender
       if (client === sender) return;
         client.write(message);
-      });
-    }
+    });
+  }
 });
 
 server.listen(6809);
