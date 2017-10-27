@@ -1,8 +1,8 @@
-var net = require('net');
+const net = require('net');
 
 var clients = [];
 
-var server = net.createServer((socket) => {
+const server = net.createServer((socket) => {
   clients.push(socket);
 
   socket.on('data', (data) => {
